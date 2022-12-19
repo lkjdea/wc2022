@@ -1,0 +1,41 @@
+<html>
+<head>
+<script>
+function checkNumber() {
+	turns = 1
+	num = Math.floor(Math.random()*8145060) + 1
+	while (turns > 0) {
+		guess = prompt("1~8145060사이 정수 입력")
+		if  (guess == null) {break}
+		else if (guess == num) {
+			alert("개버그네 Tlqkf, 이거  어케함? " + num + " 였음")
+			alert("ㄹㅇ 버그인듯, 버그 리포터 문의좀;;")
+			break
+		}
+		else if (guess < num) {
+			turns--
+			alert("어림도없지 어딜 허접이ㅋ")
+		}
+		else if (guess > num) {
+			turns--
+			alert("이게 가능하겠냐고ㅋㅋㅋㅋㅋ아ㅋㅋㅋㅋㅋㅋ")
+		}
+	}
+	if (turns == 0) {
+		alert("허접이네ㅋ " + num + " 였음")
+		alert("되겠냐고 ㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋ")
+	}
+		
+}
+</script>
+<head>
+<body>
+<h1>윤수의 작고 거지같은 로또</h1>
+<p>윤수의 로또 확률 뚫어보기</p>
+<p>로또 확률을 반영한 갓 프로그램!!</p>
+<button onclick="checkNumber()" type = "button" value = "시작"> 덤벼봐라 허접아 ㅋ </button>
+<p>아 ㅋㅋㅋㅋㅋㅋㅋㅋ 가능하겠냐고 ㅋㅋㅋㅋㅋㅋㅋㅋㅋ</p>
+<p>이거 성공 인증하면 헬스장간다 ㅋ </p>
+<img src="ssoo.jpg" width="25%">
+</body>
+<html>
